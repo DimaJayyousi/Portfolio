@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    font-family: 'Inria Serif', serif;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow:0 1px 3px -2px  #E8C3C3 ;
+    height:80px;
+    color: #48252F;
+}
+
+.main {
+        display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 33px;    
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-menu li:hover {
+  color: #006747;
+  border-bottom: 2px solid #006747;
+}
+  
+  
