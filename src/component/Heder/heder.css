@@ -58,12 +58,10 @@ body {
   text-align: center;
   padding-top: 30px;
   margin-right: 300px;
- 
+     text-decoration: none;
+
 }
-.main p{
-   text-decoration: none;
-   text-underline-offset:none;
-}
+
 
 /* 🔥 Extra wrapper in case you want padding control */
 .main-content {

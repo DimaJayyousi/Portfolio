@@ -5,7 +5,7 @@ import linkedin from '../Assets/linkedin.png'
 import insta from '../Assets/insta.png'
 import gmail from '../Assets/gmail.png'
 import git from '../Assets/git.png'
-
+import you from '../Assets/youtube.png'
 
 
 const about = () => {
@@ -35,6 +35,9 @@ const about = () => {
       </a>
       <a href="https://github.com/DimaJayyousi" target="_blank" rel="noopener noreferrer">
         <img src={git} alt="GitHub" />
+      </a>
+       <a href="http://www.youtube.com/@Learntocode-rs3qs" target="_blank" rel="noopener noreferrer">
+        <img src={you} alt="you tube " />
       </a>
     </div>
   </div>
