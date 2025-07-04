@@ -16,4 +16,25 @@
     display: block; 
     height:620px;
   }
-  
+  /* Responsive tweaks */
+@media (max-width: 1024px) {
+  .hero img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    align-items: flex-start; /* Optional: pushes image up on tiny screens */
+  }
+
+  .hero img {
+    height: 300px;
+  }
+}

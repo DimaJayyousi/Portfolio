@@ -1,0 +1,112 @@
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: 'Inria Sans', sans-serif;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #5b2230; /* wine-ish text color */
+  position: relative;
+  flex-wrap: wrap;
+  background-color: #d4c7c6;
+
+}
+
+/* ABOUT ME heading */
+.all h1 {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  font-size: 3rem;
+  color: #5b2230;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Image on the left */
+.img {
+  order: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.img img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text on the right */
+.text {
+  order: 0;
+  flex: 1;
+  max-width: 550px;
+}
+
+.text h2 {
+  color: #582033;
+  margin-top: 20px;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+/* Paragraph styling */
+.text p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: #3e1a24;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .all {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .all h1 {
+    position: static;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .img {
+    order: 0; /* now show image first on mobile */
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    order: 1;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text h2 {
+    text-align: center;
+  }
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center; /* center on all screen sizes */
+}
+.social-icons img{
+  width:40px;
+  height: 50px;
+}
+
+/* If you want to match center-align on mobile */
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+  }
+}

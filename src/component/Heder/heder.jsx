@@ -1,19 +1,23 @@
 import React from 'react'
 import './heder.css'
-const heder = () => {
+//import  Projects from '../../Pages/project';
+//import Activity from '../../Pages/activity';
+import { Link } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+const heder = () => {    //
   return (
     <div className='navbar'>
       <div className="main">
-        <p>Diamond Rain </p>
+        <p><Link to="/" >Dima Jayyousi</Link></p>
       </div>
-      <div className="nav-menu">
-        <li>About Me</li>
-        <li>Experience</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Volunteering</li>
-        <li>certifications </li>
-      </div>
+      <ul className="nav-menu">
+        <li><a href="#me">Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/activity">Volunteering</Link></li>
+      </ul>
     </div>
   )
 }

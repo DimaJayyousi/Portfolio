@@ -1,39 +1,114 @@
-.navbar{
-    display: flex;
-    font-family: 'Inria Serif', serif;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow:0 1px 3px -2px  #E8C3C3 ;
-    height:80px;
-    color: #48252F;
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main {
-        display: flex;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 33px;    
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inria Serif', serif;
+  background-color: #D4C7C6;
+  color: #48252F;
 }
 
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap:50px;
-    font-size: 20px;
-    font-weight: 500;
-}
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+/* 🌟 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  height: 80px;
+  box-shadow: 0 1px 3px -2px #E8C3C3;
 }
 
-.nav-menu li:hover {
+/* 🌈 Nav Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-menu li a:hover {
   color: #006747;
   border-bottom: 2px solid #006747;
 }
-  
-  
+
+/* 🎤 Hero or Title */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 33px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  margin-right: 300px;
+ 
+}
+.main p{
+   text-decoration: none;
+   text-underline-offset:none;
+}
+
+/* 🔥 Extra wrapper in case you want padding control */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+  }
+
+  .main {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .mobile-footer-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  color:  #48252F;
+  transition: color 0.3s ease;
+  font-family: 'Inria Sans', sans-serif;
+}

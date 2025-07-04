@@ -1,0 +1,103 @@
+/* === Base Section Styles === */
+.experience-section {
+  background-color: #B69091;
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* === Title === */
+.experience-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #3b0a2f;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* === Grid Layout === */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 600px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens: 3 columns (if needed) */
+@media (min-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* === Individual Experience Card === */
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* === Label Styles === */
+.experience-label {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #3b0a2f;
+  border-radius: 999px;
+  color: #3b0a2f;
+  font-weight: 600;
+  width: fit-content;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+
+/* === Content Box === */
+.experience-box {
+  background-color: #C4A29E;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color:  #300a27;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: 1 column for mobile */
+  gap: 40px;
+}
+
+/* Show 2 columns on medium screens and up */
+@media (min-width: 768px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* === Text Scaling for Small Screens === */
+@media (max-width: 400px) {
+  .experience-title {
+    font-size: 2.2rem;
+  }
+
+  .experience-label {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+
+  .experience-box {
+    font-size: 0.95rem;
+    padding: 16px;
+  }
+}
