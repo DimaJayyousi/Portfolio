@@ -1,0 +1,129 @@
+/* 🔄 Reset & Container */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inria Serif', serif;
+  background-color: #D4C7C6;
+  color: #48252F;
+}
+
+.projects-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category-header {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* 🎴 Activity Card Glow-Up */
+.activity-card-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 3rem;
+  align-items: center;
+  border: none;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: #48252F;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card-horizontal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* 🖼 Image Section */
+.image-carousel {
+  flex: 1;
+  position: relative;
+}
+
+.project-media {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ⏮ ⏭ Image Controls */
+.image-controls {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.image-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* 📝 Info Section */
+.activity-info {
+  flex: 2;
+  padding: 1rem;
+}
+
+.activity-info h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.activity-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .activity-card-horizontal {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .project-media {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .activity-info {
+    padding: 0;
+  }
+}
+.project-media {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-media:hover {
+  transform: scale(1.03);
+}
