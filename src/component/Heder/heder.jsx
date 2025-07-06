@@ -9,7 +9,7 @@ const heder = () => {    //
   return (
     <div className='navbar'>
       <div className="main">
-        <p><Link to="/" style={{ textDecoration: 'none' , color:"#48252F"}}>Dima Jayyousi</Link></p>
+        <p><Link to="/" style={{ textDecoration: 'none' , color:"#48252F" ,}}>Dima Jayyousi</Link></p>
       </div>
       <ul className="nav-menu">
         <li><a href="#me">Me</a></li>

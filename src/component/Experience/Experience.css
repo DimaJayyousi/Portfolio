@@ -1,9 +1,11 @@
 /* === Base Section Styles === */
 .experience-section {
-  background-color: #B69091;
+  background-color: #D4C7C6;
   padding: 40px 20px;
   min-height: 100vh;
   font-family: 'Inria Sans', sans-serif;
+    box-shadow: 0 1px 3px -2px #48252f;
+
 }
 
 /* === Title === */

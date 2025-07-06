@@ -1,18 +1,20 @@
-
 .all {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  font-family: 'Inria Sans', sans-serif;
+  font-family: "Inria Sans", sans-serif;
   padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
   color: #5b2230; /* wine-ish text color */
   position: relative;
   flex-wrap: wrap;
-  background-color: #d4c7c6;
-
+  background-color: #b69091;
+  box-shadow: 0 1px 3px -2px #48252f;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 20px;
 }
 
 /* ABOUT ME heading */
@@ -23,7 +25,7 @@
   font-size: 3rem;
   color: #5b2230;
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 /* Image on the left */
@@ -50,9 +52,9 @@
 
 .text h2 {
   color: #582033;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 0.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
 }
 
@@ -99,8 +101,8 @@
   flex-wrap: wrap;
   justify-content: center; /* center on all screen sizes */
 }
-.social-icons img{
-  width:40px;
+.social-icons img {
+  width: 40px;
   height: 50px;
 }
 
