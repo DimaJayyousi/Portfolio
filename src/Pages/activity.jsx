@@ -23,7 +23,6 @@ const Activity = () => {
 
   return (
     <div className="projects-container">
-      <h1>Projects</h1>
 
       {activities.map((activity) => {
         const current = imageIndex[activity.id] || 0;
