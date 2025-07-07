@@ -18,15 +18,7 @@
 }
 
 /* ABOUT ME heading */
-.all h1 {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-  font-size: 3rem;
-  color: #5b2230;
-  font-weight: bold;
-  font-family: "Playfair Display", serif;
-}
+
 
 /* Image on the left */
 .img {
@@ -52,7 +44,6 @@
 
 .text h2 {
   color: #582033;
-  margin-top: 70px;
   margin-bottom: 0.5rem;
   font-family: "Playfair Display", serif;
   font-size: 2rem;

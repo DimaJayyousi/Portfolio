@@ -11,7 +11,6 @@ import you from '../Assets/youtube.png'
 const about = () => {
   return (
  <div className="all" id='me'>
-  <h1>ABOUT ME</h1>
 
   <div className="img">
     <img src={me} alt="" />
