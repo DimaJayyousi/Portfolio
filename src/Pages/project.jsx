@@ -4,7 +4,7 @@ import "../style/project.css";
 
 const Project = () => {
   const [carouselIndex, setCarouselIndex] = useState({});
-
+ 
   const categories = ["3D projects", "Web project", "Documentation" ];
 
   const handlePrev = (category, maxIndex) => {

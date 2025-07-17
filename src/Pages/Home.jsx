@@ -7,13 +7,14 @@ import Skills from "../component/Skills/Skills";
 //import Footer from "./component/Footer/Footer";
 //import Projects from "./Pages/project";
 //import Activity from "./Pages/activity";
-
+import Best from '../component/best-project/best'
 const Home = () => {
  return (
     <div>
       <Hero />
       <About />
       <Exp />
+      <Best/>
       <Skills />
     </div>
   );

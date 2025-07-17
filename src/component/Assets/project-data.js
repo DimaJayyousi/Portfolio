@@ -9,6 +9,9 @@ import lipstick from '../Assets/lipstick.png'
 import map from '../Assets/map.png'
 import rokests from '../Assets/rokets.png'
 import surm from '../Assets/surm .png'
+import head from '../Assets/head.jpg'
+import helmet from '../Assets/helmet.png'
+import can from '../Assets/can.png'
 
 import hero from '../Assets/flower.png'
 import coffe from '../Assets/coffe.jpeg'
@@ -17,6 +20,7 @@ import ai from '../Assets/AI.png'
 import sw from '../Assets/sw.png'
 import peony from '../Assets/peony.png'
 const projects = [
+    { type: '3D projects', caption: 'Sip with style 🍹✨ — bold flavors, bold branding', image:can , url:"https://drive.google.com/file/d/1tsOZE4FnPsKZmTxDJJWXsxH_jIgeZdb6/view?usp=sharing" },
   { type: '3D projects', caption: 'Flying straight into the 3D world!', image: arrow },
   { type: '3D projects', caption: 'Chopping through polygons like a pro! 🪓', image:axe  },
   { type: '3D projects', caption: '3D-printed healthcare companion! 🤖 ', image:baymax  },
@@ -28,6 +32,9 @@ const projects = [
   { type: '3D projects', caption: 'Lost in the right direction—digitally', image:map ,url:"https://drive.google.com/file/d/1ubcmRuVFi_VabCwjxn-mGzzqqVC8izOo/view?usp=sharing" },
   { type: '3D projects', caption: 'Nature’s Elixir: Serum Meets Stone', image:rokests , url:"https://drive.google.com/file/d/1y-PR-y-fxpe6PoKi29cSicE1aCSDukTC/view?usp=sharing"  },
   { type: '3D projects', caption: 'Skincare so real, you’ll wanna apply it!', image:surm  },
+  { type: '3D projects', caption: 'Designed for speed, styled for impact 🏁🚨 — protection just got an upgrade', image:helmet , url:"https://drive.google.com/file/d/1Ds6fZSAlW2nklueXT409_zEWxxhSvqZx/view?usp=sharing"  },
+  { type: '3D projects', caption: 'Sound that slaps 🎧🔥 — where function meets flex', image:head , url:"https://drive.google.com/file/d/11sdAz9TYs4dRjPyQLQoxMbBGE3-jN6Kk/view?usp=sharing"},
+
   { type: 'Web project', caption: 'Petals of Perfection, Delivered to Your Door 🌸', image:hero  , url:"https://peony-olive.vercel.app/"},
   { type: 'Web project', caption: '☕ Brewing the Perfect UX – A Coffee App Design in Figma', image:coffe ,url:"https://www.figma.com/design/sKTcYIna3Qph60NJWCDGit/final-project?t=LtDce62MbSZ6rQHb-1" },
   { type: 'Documentation', caption: ' Peony – A flower E-Commerce Platform', image:peony , url:"https://drive.google.com/file/d/1TASWNxRf6riS_nQnQzxk52ygMtoLgI61/view?usp=sharing"  },

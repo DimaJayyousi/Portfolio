@@ -1,39 +1,45 @@
 .hero {
-  position: relative; /* Keeps elements positioned relative to this container */
+  position: relative;
   width: 100%;
-  overflow: hidden; /* Prevents the image from overflowing */
+  overflow: hidden;
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .hero img {
   width: 100%;
-  object-fit: cover; /* Ensures the image covers the area */
-  object-position: center; /* Centers the image inside the container */
-  display: block; 
-  height: 620px;
+  height: auto; /* 👈 This keeps the aspect ratio intact */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  max-height: 620px; /* Sets a cap so it doesn’t go wild on huge screens */
 }
 
-/* Responsive tweaks */
+/* Optional: add a fallback height for when the image is loading */
+.hero {
+  min-height: 300px;
+}
+
+/* Responsive tweaks: you can keep or tweak these */
 @media (max-width: 1024px) {
   .hero img {
-    height: 500px;
+    max-height: 500px;
   }
 }
 
 @media (max-width: 768px) {
   .hero img {
-    height: 400px;
+    max-height: 400px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    align-items: flex-start; /* Optional: pushes image up on tiny screens */
+    align-items: flex-start;
   }
 
   .hero img {
-    height: 300px;
+    max-height: 300px;
   }
 }
