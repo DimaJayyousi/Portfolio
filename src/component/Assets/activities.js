@@ -17,8 +17,20 @@ import pi4 from '../Assets/pitch5.jpeg'
 import d1 from '../Assets/d1.jpg'
 import d2 from '../Assets/d2.jpg'
 import cov from '../Assets/cover3d.jpeg'
+
+import med1 from '../Assets/med1.jpg'
+import med2 from '../Assets/med2.jpg'
+import med3 from '../Assets/med3.jpg'
+import med4 from '../Assets/med4.jpg'
+
 const activities = [
     {
+    id: 0,
+    name: 'Med Roots Summit 25',
+    description:
+    "Thrilled to have represented The University of Jordan as an Ambassador at the very first Med Roots Summit in Jordan! 🌱✨As part of the Media Team and a 3D Artist, I created visuals to welcome the audience and helped produce videos announcing the event. Such an inspiring experience merging biomedicine, AI, and creativity — and I’m so proud to have been part of it. 🚀💡",
+        images: [med1,med2,med3,med4],
+  },{
     id: 1,
     name: 'IEEE PITCHINNO 2025',
     description:
